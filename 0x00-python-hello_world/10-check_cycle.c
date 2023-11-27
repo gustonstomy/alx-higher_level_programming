@@ -10,8 +10,8 @@ int check_cycle(listint_t *list)
 	listint_t *ptr;
 	listint_t *p;
 
-	p2 = list;
-	prev = list;
+	ptr = list;
+	p = list;
 	while (list && ptr && ptr->next)
 	{
 		list = list->next;
