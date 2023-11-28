@@ -7,4 +7,4 @@ for i in range(1, 100):
         first_digit = i // 10
         second_digit = i % 10
     if first_digit < second_digit and int(f"{second_digit}{first_digit}") > i:
-        print(f"{i:02}", end=", " if i != 89 else "\n")
+        print(f"{i:02}".format(i), end=", " if i != 89 else "\n")
