@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def add(a, b):
-    sum = int(a) + int(b)
+    sum = a + b
     print(sum)
