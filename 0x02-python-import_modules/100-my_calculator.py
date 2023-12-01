@@ -21,8 +21,5 @@ if __name__ == "__main__":
         elif operator == '*':
             print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
         elif operator == '/':
-            if b == 0:
-                print("Division by zero is not allowed.")
-            else:
-                print("{:d} / {:d} = {:.2f}".format(a, b, div(a, b)))
+            print("{:d} / {:d} = {:.2f}".format(a, b, div(a, b)))
             exit(1)
