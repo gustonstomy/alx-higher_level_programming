@@ -4,7 +4,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
 
     length = len(argv)
-    if length < 4:
+    if length != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     elif length > 3 and argv[2] not in {'+', '-', '/', '*'}:
@@ -25,4 +25,4 @@ if __name__ == "__main__":
                 print("Division by zero is not allowed.")
             else:
                 print("{:d} / {:d} = {:.2f}".format(a, b, div(a, b)))
-                exit(1)
+            exit(1)
