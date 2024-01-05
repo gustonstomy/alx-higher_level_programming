@@ -2,7 +2,6 @@
 """empty class Rectangle that defines a rectangle"""
 
 
-
 class Rectangle():
     """Nothing DOne"""
     pass
