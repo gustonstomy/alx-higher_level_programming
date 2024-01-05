@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Rectangle that defines a rectangle by: (based on 0-rectangle)"""
 
-
 class Rectangle():
     """
     Rectangle that defines a rectangle by: (based on 0-rectangle.py)
@@ -52,6 +51,11 @@ class Rectangle():
                     - value: int
                 """
                 if not isinstance(value, int):
-                    raise TypeError('height must be >= 0')
+                    raise TypeError('height must be an integer')
+
+                if value < 0:
+                    raise ValueError('height must be >= 0')
+
+                self.__height = value
 
                 self.__height = value
